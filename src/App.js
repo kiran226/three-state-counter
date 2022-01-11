@@ -11,8 +11,8 @@ function App(){
 
       <h2>Current value of state is {count}</h2>
       <button onClick={() => setCount(0) }>Reset the count</button>
-      <button onClick={() => setCount(count+1) }>Increase the count</button>
-      <button onClick={() => setCount(count-1)} >Decrease the count</button>
+      <button onClick={() => count>10 ? "" : setCount(count+1) }>Increase the count</button>
+      <button onClick={() => count<=0 ? "" : setCount(count-1)} >Decrease the count</button>
     </div>
   )
 }
